@@ -1,0 +1,101 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    android:columnCount="4"
+    android:columnOrderPreserved="false"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:useDefaultMargins="true" >
+
+    <TextView
+        android:layout_columnSpan="4"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/heading_nearby"
+        android:textSize="32sp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/label_headline"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/headline" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:text="@string/label_description"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:text="@string/label_event"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/event" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+    
+    <TextView
+        android:id="@+id/label_location"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:text="@string/label_location"
+        android:textStyle="bold" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/location" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_column="0"
+         android:layout_gravity="right"
+         android:text="@string/label_sent"
+         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sent" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:text="@string/label_expires"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/expires" 
+        android:layout_width="wrap_content" 
+        android:paddingRight="90dp"/>
+    
+<!--     <fragment android:name="edu.vt.alerts.android.library.demo.MapActivity" -->
+<!--         android:id="@+id/mapFragment" -->
+<!--         android:layout_height="match_parent" /> -->
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_column="3"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_row="6"
+        android:background="@color/blue"
+        android:text="@string/map_button" />
+
+</GridLayout>
